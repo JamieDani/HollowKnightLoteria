@@ -1,0 +1,65 @@
+/* 
+  CSS normalization method:
+    Reset the default styles of HTML elements across different web browsers for style consistency
+*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: rgb(34, 35, 58);
+  display: flex;
+}
+
+.game-board{
+  width:35vw;
+  height: 97.5vh;
+  margin: auto;
+  background-color: rgb(10, 10, 23);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.card{
+  display: flex;
+  position: relative;
+
+  width: 7.5vw;
+  height: 22.5vh;
+  margin: 5px;
+
+  background-size: cover;
+  background-image: url('images/cards/unknown_card.png');
+}
+
+.card > img{
+  width: 70%;
+  margin: auto;
+}
+
+.draw-card-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#drawn-card{
+  max-height: 200px;
+}
+
+#draw-button{
+  font-size: medium;
+  margin-top: 10px;
+  padding: 10px 5px;
+
+}
+
+#restart-game-button{
+  font-size: medium;
+  padding: 10px 5px;
+}
